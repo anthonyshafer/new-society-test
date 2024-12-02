@@ -20,14 +20,40 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        h1 {
+        h1, h2 {
             color: #2c3e50;
+        }
+        h1 {
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
         }
         p {
             color: #666;
             font-size: 1.1em;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        .features-list li {
+            margin: 15px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features-list li:before {
+            content: '✓';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -35,6 +61,25 @@
     <div class="container">
         <h1>Welcome to New Society</h1>
         <p>This is a simple test page for our new project.</p>
+        
+        <h2>About Us</h2>
+        <p>We are a forward-thinking organization dedicated to creating positive change through innovation and collaboration. Our mission is to build a better future for everyone.</p>
+        
+        <h2>Features</h2>
+        <ul class="features-list">
+            <li>Innovative Solutions for Modern Challenges</li>
+            <li>Community-Driven Development</li>
+            <li>Sustainable Practices</li>
+            <li>Open Collaboration</li>
+        </ul>
+        
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get involved? Reach out to us:</p>
+            <p>Email: contact@newsociety.example.com<br>
+            Phone: (555) 123-4567<br>
+            Address: 123 Innovation Street, Tech City, TC 12345</p>
+        </div>
     </div>
 </body>
 </html>
